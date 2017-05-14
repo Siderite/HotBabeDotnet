@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotBabe", "HotBabe\HotBabe.csproj", "{0B2B32C0-FB02-45A6-8247-300C663F9369}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D75122B0-5679-436C-9A3A-550E3A218936} = {D75122B0-5679-436C-9A3A-550E3A218936}
+		{FD4DC9CA-4E43-4D88-BC34-21C5C5BAEF3C} = {FD4DC9CA-4E43-4D88-BC34-21C5C5BAEF3C}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monitors", "Monitors\Monitors.csproj", "{193895DC-A7D6-4AC9-975F-3DCFE684C604}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomMonitor", "RandomMonitor\RandomMonitor.csproj", "{FD4DC9CA-4E43-4D88-BC34-21C5C5BAEF3C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{17BC2C26-E455-47BB-A188-F5B3CAA15CD5}"
+	ProjectSection(SolutionItems) = preProject
+		TODO.txt = TODO.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkMonitor", "NetworkMonitor\NetworkMonitor.csproj", "{D75122B0-5679-436C-9A3A-550E3A218936}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BreakMonitor", "BreakMonitor\BreakMonitor.csproj", "{3850204E-FAAC-4F25-A3D2-7C5A6F12CF3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotLogger", "HotLogger\HotLogger.csproj", "{C91725F0-06A1-4C07-8A17-A45617BE1656}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0B2B32C0-FB02-45A6-8247-300C663F9369}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B2B32C0-FB02-45A6-8247-300C663F9369}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B2B32C0-FB02-45A6-8247-300C663F9369}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B2B32C0-FB02-45A6-8247-300C663F9369}.Release|Any CPU.Build.0 = Release|Any CPU
+		{193895DC-A7D6-4AC9-975F-3DCFE684C604}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{193895DC-A7D6-4AC9-975F-3DCFE684C604}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{193895DC-A7D6-4AC9-975F-3DCFE684C604}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{193895DC-A7D6-4AC9-975F-3DCFE684C604}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD4DC9CA-4E43-4D88-BC34-21C5C5BAEF3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD4DC9CA-4E43-4D88-BC34-21C5C5BAEF3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD4DC9CA-4E43-4D88-BC34-21C5C5BAEF3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD4DC9CA-4E43-4D88-BC34-21C5C5BAEF3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D75122B0-5679-436C-9A3A-550E3A218936}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D75122B0-5679-436C-9A3A-550E3A218936}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D75122B0-5679-436C-9A3A-550E3A218936}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D75122B0-5679-436C-9A3A-550E3A218936}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3850204E-FAAC-4F25-A3D2-7C5A6F12CF3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3850204E-FAAC-4F25-A3D2-7C5A6F12CF3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3850204E-FAAC-4F25-A3D2-7C5A6F12CF3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3850204E-FAAC-4F25-A3D2-7C5A6F12CF3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C91725F0-06A1-4C07-8A17-A45617BE1656}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C91725F0-06A1-4C07-8A17-A45617BE1656}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C91725F0-06A1-4C07-8A17-A45617BE1656}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C91725F0-06A1-4C07-8A17-A45617BE1656}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

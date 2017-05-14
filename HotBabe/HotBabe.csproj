@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0B2B32C0-FB02-45A6-8247-300C663F9369}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HotBabe</RootNamespace>
+    <AssemblyName>HotBabe</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.85.5.452, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External Assemblies\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Arguments.cs" />
+    <Compile Include="Code\Cache\Cache.cs" />
+    <Compile Include="Code\Constants.cs" />
+    <Compile Include="Code\Data\Alignment.cs" />
+    <Compile Include="Code\Data\CommandItem.cs" />
+    <Compile Include="Code\Data\Command.cs" />
+    <Compile Include="Code\Helpers\AssemblyHelper.cs" />
+    <Compile Include="Code\Helpers\AutoRunHelper.cs" />
+    <Compile Include="Code\Helpers\ResourceHelper.cs" />
+    <Compile Include="Code\Helpers\ZipHelper.cs" />
+    <Compile Include="Code\Helpers\ControlExtensionMethods.cs" />
+    <Compile Include="Code\Helpers\EventArgs.cs" />
+    <Compile Include="Code\Helpers\EventExtensionMethods.cs" />
+    <Compile Include="Code\Helpers\ImageHelper.cs" />
+    <Compile Include="Code\Helpers\PathHelper.cs" />
+    <Compile Include="Code\Helpers\UnsafeNativeMethods.cs" />
+    <Compile Include="Code\Settings\BaseSettingsManager.cs" />
+    <Compile Include="Code\Settings\BlendImagesMode.cs" />
+    <Compile Include="Code\Settings\HotBabeSettings.cs" />
+    <Compile Include="Code\Data\ImageInfo.cs" />
+    <Compile Include="Code\Helpers\SerializableDictionary.cs" />
+    <Compile Include="Code\Settings\SettingsChangedEventArgs.cs" />
+    <Compile Include="Code\Settings\SettingsManagerProperty.cs" />
+    <Compile Include="Code\Settings\SettingsManagerPropertyCollection.cs" />
+    <Compile Include="Code\Transitions\CustomImageTransition.cs" />
+    <Compile Include="Code\Validation\SettingsValidationHelper.cs" />
+    <Compile Include="Code\Transitions\OutThenInTransition.cs" />
+    <Compile Include="Code\Validation\ValidationError.cs" />
+    <Compile Include="Code\Validation\ValidationErrorCollection.cs" />
+    <Compile Include="Code\Validation\ValidationResult.cs" />
+    <Compile Include="Code\Settings\XmlSettingsManager.cs" />
+    <Compile Include="Code\Transitions\IImageTransition.cs" />
+    <Compile Include="Code\Transitions\SimpleTransition.cs" />
+    <Compile Include="Code\Transitions\SmoothTransition.cs" />
+    <Compile Include="Controllers\MainController.cs" />
+    <Compile Include="Controllers\SettingsEditorController.cs" />
+    <Compile Include="Controls\ImageInfoEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ImageInfoEditor.Designer.cs">
+      <DependentUpon>ImageInfoEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Console.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Console.Designer.cs">
+      <DependentUpon>Console.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ImageView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\ImageView.Designer.cs">
+      <DependentUpon>ImageView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ISettingsEditorView.cs" />
+    <Compile Include="Views\MainView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code\Data\MonitorInfo.cs" />
+    <Compile Include="Controls\MonitorInfoEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MonitorInfoEditor.Designer.cs">
+      <DependentUpon>MonitorInfoEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Views\MainView.resx">
+      <DependentUpon>MainView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Views\SettingsEditorView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\SettingsEditorView.Designer.cs">
+      <DependentUpon>SettingsEditorView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\IMainView.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HotLogger\HotLogger.csproj">
+      <Project>{C91725F0-06A1-4C07-8A17-A45617BE1656}</Project>
+      <Name>HotLogger</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Monitors\Monitors.csproj">
+      <Project>{193895DC-A7D6-4AC9-975F-3DCFE684C604}</Project>
+      <Name>Monitors</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\ImageInfoEditor.resx">
+      <DependentUpon>ImageInfoEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MonitorInfoEditor.resx">
+      <DependentUpon>MonitorInfoEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Console.resx">
+      <DependentUpon>Console.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ImageView.resx">
+      <DependentUpon>ImageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SettingsEditorView.resx">
+      <DependentUpon>SettingsEditorView.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\StartImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Readme.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,8 @@
+<Configuration>
+  <NamespaceFolders>
+    <SkipFolder>0B2B32C0-FB02-45A6-8247-300C663F9369/d:Code/d:Cache</SkipFolder>
+    <SkipFolder>0B2B32C0-FB02-45A6-8247-300C663F9369/d:Code/d:Data</SkipFolder>
+    <SkipFolder>0B2B32C0-FB02-45A6-8247-300C663F9369/d:Code/d:Settings</SkipFolder>
+    <SkipFolder>0B2B32C0-FB02-45A6-8247-300C663F9369/d:Code/d:Validation</SkipFolder>
+  </NamespaceFolders>
+</Configuration>

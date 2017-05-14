@@ -1,0 +1,21 @@
+Todo:
+- Docking and/or anchoring of the images to the sides of the screen
+
+Need help with:
+- I am terrible with graphical design, so I would love to have someone work on the Advanced Settings form
+- The picture packs are something I've cropped up in a few minutes using Paint.NET. Feel free to send me your own so I can bundle them in the application
+- Any code design improvements are welcome. I am working on this when I have the time (and I don't :) ) so if you smell bad code, please let me know
+
+
+Ideas for the future:
+- handle animated images (how?)
+?- sometimes AlwaysOnTop doesn't work
+- other parameters syntax @property="value"
+- monitor for CPU temp (how?)
+- Pinky & the Brain theme
+- list of active applications on which to hide
+- Full screen images that frame the screen like picture frames (green vines that flower, Giger style stuff, etc)
+	- that also means a feature to resize the images based on fixed values or current screen size
+- make the code look decent, write documentation for it
+- opacity controlled by configurable modules (maybe also other parameters, like position or dock)
+- image provider modules
